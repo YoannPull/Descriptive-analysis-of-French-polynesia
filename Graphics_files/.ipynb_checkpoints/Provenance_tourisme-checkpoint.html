@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a2d5da98e36973cf1c1bb631caaaeec5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a2d5da98e36973cf1c1bb631caaaeec5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a2d5da98e36973cf1c1bb631caaaeec5 = L.map(
+                "map_a2d5da98e36973cf1c1bb631caaaeec5",
+                {
+                    center: [32.30230141364259, 9.042608177267951],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9975adf63096563d511f493c056bbe0b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var marker_e5bf5a3ce3c5dfb599feaf79efbc8319 = L.marker(
+                [11.5024338, 17.7578122],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_71a1e5cd2095b524b65d5e5f3a04a29b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e5bf5a3ce3c5dfb599feaf79efbc8319.setIcon(icon_71a1e5cd2095b524b65d5e5f3a04a29b);
+        
+    
+            marker_e5bf5a3ce3c5dfb599feaf79efbc8319.bindTooltip(
+                `<div>
+                     Afrique <br> 286
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de76f5e788d00b1fbd0143898e39301b = L.marker(
+                [23.6585116, -102.0077097],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_f9c256eca8442c97530a9f51fc3bcd57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_de76f5e788d00b1fbd0143898e39301b.setIcon(icon_f9c256eca8442c97530a9f51fc3bcd57);
+        
+    
+            marker_de76f5e788d00b1fbd0143898e39301b.bindTooltip(
+                `<div>
+                     Mexique <br> 1010
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fa5903db60940d560f6fe71bc3c78a1 = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_998fd8630f738f8f23936e38946ff00c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_9fa5903db60940d560f6fe71bc3c78a1.setIcon(icon_998fd8630f738f8f23936e38946ff00c);
+        
+    
+            marker_9fa5903db60940d560f6fe71bc3c78a1.bindTooltip(
+                `<div>
+                     Canada <br> 9270
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fe4dd46dfe0f40342642f55308155b7 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_7324e9a7892869a6b5b1bb7af2f6a43c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2fe4dd46dfe0f40342642f55308155b7.setIcon(icon_7324e9a7892869a6b5b1bb7af2f6a43c);
+        
+    
+            marker_2fe4dd46dfe0f40342642f55308155b7.bindTooltip(
+                `<div>
+                     USA <br> 62278
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b38608c78570894a17066776a6594d47 = L.marker(
+                [-34.9964963, -64.9672817],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_7a9b8c958167f7842790bf87609c6da5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b38608c78570894a17066776a6594d47.setIcon(icon_7a9b8c958167f7842790bf87609c6da5);
+        
+    
+            marker_b38608c78570894a17066776a6594d47.bindTooltip(
+                `<div>
+                     Argentine <br> 840
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_613dd6ab924ac29708b6bf016a96a81f = L.marker(
+                [-10.3333333, -53.2],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_107046b859913514003e69126683ada2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_613dd6ab924ac29708b6bf016a96a81f.setIcon(icon_107046b859913514003e69126683ada2);
+        
+    
+            marker_613dd6ab924ac29708b6bf016a96a81f.bindTooltip(
+                `<div>
+                     Brésil <br> 2767
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36933ab112de179f5b13dcadd1a3b2b4 = L.marker(
+                [-31.7613365, -71.3187697],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_dd8cf9f2a835fa30aff291645e3f02cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_36933ab112de179f5b13dcadd1a3b2b4.setIcon(icon_dd8cf9f2a835fa30aff291645e3f02cd);
+        
+    
+            marker_36933ab112de179f5b13dcadd1a3b2b4.bindTooltip(
+                `<div>
+                     Chili <br> 1421
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43fe2ee7ece354b33dcc28874ab2e208 = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_5228521b9ff8a503ecda92f9c871bf92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_43fe2ee7ece354b33dcc28874ab2e208.setIcon(icon_5228521b9ff8a503ecda92f9c871bf92);
+        
+    
+            marker_43fe2ee7ece354b33dcc28874ab2e208.bindTooltip(
+                `<div>
+                     Chine <br> 3268
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf7b843ec6400c7b2c3dce57cb6efacc = L.marker(
+                [36.638392, 127.6961188],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_e4fb836b5b58c3d4b0f1cf944e1c0fa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf7b843ec6400c7b2c3dce57cb6efacc.setIcon(icon_e4fb836b5b58c3d4b0f1cf944e1c0fa3);
+        
+    
+            marker_bf7b843ec6400c7b2c3dce57cb6efacc.bindTooltip(
+                `<div>
+                     Corée du sud <br> 746
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11d692aff7197eeacc4a713656676ba3 = L.marker(
+                [22.2793278, 114.1628131],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_5e59f46b5a95245ab7d6283a3246f4c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11d692aff7197eeacc4a713656676ba3.setIcon(icon_5e59f46b5a95245ab7d6283a3246f4c6);
+        
+    
+            marker_11d692aff7197eeacc4a713656676ba3.bindTooltip(
+                `<div>
+                     Hong Kong <br> 453
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd2c80f8c38ab730844381ef71c13678 = L.marker(
+                [22.3511148, 78.6677428],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_133e6480c1a608d835ea30f51d8c052a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd2c80f8c38ab730844381ef71c13678.setIcon(icon_133e6480c1a608d835ea30f51d8c052a);
+        
+    
+            marker_cd2c80f8c38ab730844381ef71c13678.bindTooltip(
+                `<div>
+                     Inde <br> 422
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf6de5672ff245017cccb1027d8e5914 = L.marker(
+                [-2.4833826, 117.8902853],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_0fbc7d4dcbf959ccdd8bdb175e29ad88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_cf6de5672ff245017cccb1027d8e5914.setIcon(icon_0fbc7d4dcbf959ccdd8bdb175e29ad88);
+        
+    
+            marker_cf6de5672ff245017cccb1027d8e5914.bindTooltip(
+                `<div>
+                     Indonésie <br> 84
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f53f04e4ce256eaf31a0ef49433cf07f = L.marker(
+                [36.5748441, 139.2394179],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_cc8128ef694ec9f9bfff84e610955be7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f53f04e4ce256eaf31a0ef49433cf07f.setIcon(icon_cc8128ef694ec9f9bfff84e610955be7);
+        
+    
+            marker_f53f04e4ce256eaf31a0ef49433cf07f.bindTooltip(
+                `<div>
+                     Japon <br> 12527
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98de491ee4182d92ebbbe0b427f7b8c9 = L.marker(
+                [4.5693754, 102.2656823],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_1984b3f15f854b5e178d5130a1d83c87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_98de491ee4182d92ebbbe0b427f7b8c9.setIcon(icon_1984b3f15f854b5e178d5130a1d83c87);
+        
+    
+            marker_98de491ee4182d92ebbbe0b427f7b8c9.bindTooltip(
+                `<div>
+                     Malaisie <br> 108
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_814c9796705af038166c11688de79c59 = L.marker(
+                [12.7503486, 122.7312101],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_e2330c96db2563fdf3b13d66f2f7998f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_814c9796705af038166c11688de79c59.setIcon(icon_e2330c96db2563fdf3b13d66f2f7998f);
+        
+    
+            marker_814c9796705af038166c11688de79c59.bindTooltip(
+                `<div>
+                     Philippines <br> 148
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdd2774a12efbc8e4b498e51d4ea5214 = L.marker(
+                [1.357107, 103.8194992],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_4703f189bdf8d20d99a651ac966049c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bdd2774a12efbc8e4b498e51d4ea5214.setIcon(icon_4703f189bdf8d20d99a651ac966049c0);
+        
+    
+            marker_bdd2774a12efbc8e4b498e51d4ea5214.bindTooltip(
+                `<div>
+                     Singapour <br> 318
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42e3a4433850e468d8236b77257d00ec = L.marker(
+                [23.9739374, 120.9820179],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_c9a153eb18e006645f10392f075c14dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_42e3a4433850e468d8236b77257d00ec.setIcon(icon_c9a153eb18e006645f10392f075c14dc);
+        
+    
+            marker_42e3a4433850e468d8236b77257d00ec.bindTooltip(
+                `<div>
+                     Taïwan <br> 144
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b917e95076567225e19c8a5490294101 = L.marker(
+                [14.8971921, 100.83273],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_09bda0d49b37b61b2d071058468c14a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b917e95076567225e19c8a5490294101.setIcon(icon_09bda0d49b37b61b2d071058468c14a3);
+        
+    
+            marker_b917e95076567225e19c8a5490294101.bindTooltip(
+                `<div>
+                     Thaïlande <br> 43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2a14d30814ad576bafef19339015e2c = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_61e5fa02ccdc99e810bb3d1bdfbc143d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c2a14d30814ad576bafef19339015e2c.setIcon(icon_61e5fa02ccdc99e810bb3d1bdfbc143d);
+        
+    
+            marker_c2a14d30814ad576bafef19339015e2c.bindTooltip(
+                `<div>
+                     Allemagne <br> 4028
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12c570667ad9b38a9fb0135785da65e0 = L.marker(
+                [47.59397, 14.12456],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_0531456f0ad1616278f8b483c148070a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_12c570667ad9b38a9fb0135785da65e0.setIcon(icon_0531456f0ad1616278f8b483c148070a);
+        
+    
+            marker_12c570667ad9b38a9fb0135785da65e0.bindTooltip(
+                `<div>
+                     Autriche <br> 740
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c36781d0f75f225cf6195dcf5afea4e3 = L.marker(
+                [50.6402809, 4.6667145],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_899010c1a946091e9d0573a5aa76ced1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c36781d0f75f225cf6195dcf5afea4e3.setIcon(icon_899010c1a946091e9d0573a5aa76ced1);
+        
+    
+            marker_c36781d0f75f225cf6195dcf5afea4e3.bindTooltip(
+                `<div>
+                     Belgique <br> 997
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c05377c45e588fd754ed0028fa49b63 = L.marker(
+                [55.670249, 10.3333283],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_5feaf1cc6e73f96a770ea13c6250d2c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3c05377c45e588fd754ed0028fa49b63.setIcon(icon_5feaf1cc6e73f96a770ea13c6250d2c5);
+        
+    
+            marker_3c05377c45e588fd754ed0028fa49b63.bindTooltip(
+                `<div>
+                     Danemark <br> 216
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_636cf169bdac37437e8566621ec603b9 = L.marker(
+                [39.3260685, -4.8379791],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_fb45db47cb66034e4312eabb2d3dfb6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_636cf169bdac37437e8566621ec603b9.setIcon(icon_fb45db47cb66034e4312eabb2d3dfb6b);
+        
+    
+            marker_636cf169bdac37437e8566621ec603b9.bindTooltip(
+                `<div>
+                     Espagne <br> 2782
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84c76e8748466e4f8c186cf7d6fbde63 = L.marker(
+                [63.2467777, 25.9209164],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_cd76dfb6f037f13f5ce6592169f9a284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_84c76e8748466e4f8c186cf7d6fbde63.setIcon(icon_cd76dfb6f037f13f5ce6592169f9a284);
+        
+    
+            marker_84c76e8748466e4f8c186cf7d6fbde63.bindTooltip(
+                `<div>
+                     Finlande <br> 73
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6ca275c71f226604da60267e4d51936 = L.marker(
+                [42.6384261, 12.674297],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_9c0a7c154bf25aa512b38010747f3072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a6ca275c71f226604da60267e4d51936.setIcon(icon_9c0a7c154bf25aa512b38010747f3072);
+        
+    
+            marker_a6ca275c71f226604da60267e4d51936.bindTooltip(
+                `<div>
+                     Italie <br> 7887
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1a6d18f618845b9d79c68aa30725468 = L.marker(
+                [49.8158683, 6.1296751],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_d18b6b2bfb041021213108ccb9bc284e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_e1a6d18f618845b9d79c68aa30725468.setIcon(icon_d18b6b2bfb041021213108ccb9bc284e);
+        
+    
+            marker_e1a6d18f618845b9d79c68aa30725468.bindTooltip(
+                `<div>
+                     Luxembourg <br> 137
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae414a025df9d52af5e2b83a215c2d2d = L.marker(
+                [61.1529386, 8.7876653],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_3a4b4a52f6814aa9f637f9ef549282fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ae414a025df9d52af5e2b83a215c2d2d.setIcon(icon_3a4b4a52f6814aa9f637f9ef549282fb);
+        
+    
+            marker_ae414a025df9d52af5e2b83a215c2d2d.bindTooltip(
+                `<div>
+                     Norvège <br> 218
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50bd4a420d0573be2807ff62849eb863 = L.marker(
+                [52.2434979, 5.6343227],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_e8cfe0a086f1fd99d3a0a18c40be8528 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_50bd4a420d0573be2807ff62849eb863.setIcon(icon_e8cfe0a086f1fd99d3a0a18c40be8528);
+        
+    
+            marker_50bd4a420d0573be2807ff62849eb863.bindTooltip(
+                `<div>
+                     Pays-Bas <br> 367
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7ad3d30cdaf4a8a5b855ddad4a7d247 = L.marker(
+                [39.6621648, -8.1353519],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_9eb018d613f660fb8970216a8e7d2057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c7ad3d30cdaf4a8a5b855ddad4a7d247.setIcon(icon_9eb018d613f660fb8970216a8e7d2057);
+        
+    
+            marker_c7ad3d30cdaf4a8a5b855ddad4a7d247.bindTooltip(
+                `<div>
+                     Portugal <br> 209
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_097e8488a05f789768706209e9727f7f = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_901870893811f18ba9a3376ddffe4bf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_097e8488a05f789768706209e9727f7f.setIcon(icon_901870893811f18ba9a3376ddffe4bf7);
+        
+    
+            marker_097e8488a05f789768706209e9727f7f.bindTooltip(
+                `<div>
+                     Royaume-Uni <br> 4834
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b72c6a2a2057126d0dfd1b69c675f8b = L.marker(
+                [64.6863136, 97.7453061],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_2689507c75e25dd633050ecc777b0f9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b72c6a2a2057126d0dfd1b69c675f8b.setIcon(icon_2689507c75e25dd633050ecc777b0f9f);
+        
+    
+            marker_7b72c6a2a2057126d0dfd1b69c675f8b.bindTooltip(
+                `<div>
+                     Russie <br> 640
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_460f8839c6ca28f112bfd08f1df4fa99 = L.marker(
+                [46.7985624, 8.2319736],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_8806694e40ed5c8c4b6f270f317c22d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_460f8839c6ca28f112bfd08f1df4fa99.setIcon(icon_8806694e40ed5c8c4b6f270f317c22d0);
+        
+    
+            marker_460f8839c6ca28f112bfd08f1df4fa99.bindTooltip(
+                `<div>
+                     Suisse <br> 2911
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c6d5999b1af334d2bd562dd21c350fd = L.marker(
+                [59.6749712, 14.5208584],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_39cbcc2aac74d6b4252bc2505f2b33bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c6d5999b1af334d2bd562dd21c350fd.setIcon(icon_39cbcc2aac74d6b4252bc2505f2b33bb);
+        
+    
+            marker_7c6d5999b1af334d2bd562dd21c350fd.bindTooltip(
+                `<div>
+                     Suède <br> 446
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95482750d6cca7e6dbd80666ca7691ad = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_f3b9be31af468ae709d678cf90423f5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_95482750d6cca7e6dbd80666ca7691ad.setIcon(icon_f3b9be31af468ae709d678cf90423f5d);
+        
+    
+            marker_95482750d6cca7e6dbd80666ca7691ad.bindTooltip(
+                `<div>
+                     France <br> 34887
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_163e42bef09dcc16eb9961b4bd4676a4 = L.marker(
+                [-24.7761086, 134.755],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_a3f8c74b4d97c4b82a6a8e8c9b63d03c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_163e42bef09dcc16eb9961b4bd4676a4.setIcon(icon_a3f8c74b4d97c4b82a6a8e8c9b63d03c);
+        
+    
+            marker_163e42bef09dcc16eb9961b4bd4676a4.bindTooltip(
+                `<div>
+                     Australie <br> 9315
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff61e888e735416ac451a31653cd39b3 = L.marker(
+                [-19.919672900000002, -157.9753368892878],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_d02be3fb8c842a4f500fd77a43babcb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ff61e888e735416ac451a31653cd39b3.setIcon(icon_d02be3fb8c842a4f500fd77a43babcb9);
+        
+    
+            marker_ff61e888e735416ac451a31653cd39b3.bindTooltip(
+                `<div>
+                     Îles Cook <br> 191
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cca6313183e581b8cc301108e0eb129 = L.marker(
+                [-18.1239696, 179.0122737],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_84e0427e80095c90b0d34afbe57451c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_8cca6313183e581b8cc301108e0eb129.setIcon(icon_84e0427e80095c90b0d34afbe57451c8);
+        
+    
+            marker_8cca6313183e581b8cc301108e0eb129.bindTooltip(
+                `<div>
+                     Fidji <br> 124
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4d6baa4acc1c8f44f3254d277996301 = L.marker(
+                [-21.3019905, 165.4880773],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_0d1f2ee06df858d8bde3f3ef878f3836 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b4d6baa4acc1c8f44f3254d277996301.setIcon(icon_0d1f2ee06df858d8bde3f3ef878f3836);
+        
+    
+            marker_b4d6baa4acc1c8f44f3254d277996301.bindTooltip(
+                `<div>
+                     Nouvelle-Calédonie <br> 4111
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09bf9c6aa7c857d03235bf7cbd3e2af4 = L.marker(
+                [-41.5000831, 172.8344077],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_12716d7335601156352b9a1ff9991d3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_09bf9c6aa7c857d03235bf7cbd3e2af4.setIcon(icon_12716d7335601156352b9a1ff9991d3a);
+        
+    
+            marker_09bf9c6aa7c857d03235bf7cbd3e2af4.bindTooltip(
+                `<div>
+                     Nouvelle-Zélande <br> 7136
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_994362504fed6461ccda7baa795c446c = L.marker(
+                [-13.7693895, -172.12005],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_e9adb464eeb3fcd27e8d6b37c8fac7a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_994362504fed6461ccda7baa795c446c.setIcon(icon_e9adb464eeb3fcd27e8d6b37c8fac7a3);
+        
+    
+            marker_994362504fed6461ccda7baa795c446c.bindTooltip(
+                `<div>
+                     Samoa <br> 104
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a683afb4089f82beaf7312a20ee873e = L.marker(
+                [-19.9160819, -175.202642],
+                {}
+            ).addTo(map_a2d5da98e36973cf1c1bb631caaaeec5);
+        
+    
+            var icon_21c0e03bdace4947f5eaf6c750ddf0e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_4a683afb4089f82beaf7312a20ee873e.setIcon(icon_21c0e03bdace4947f5eaf6c750ddf0e3);
+        
+    
+            marker_4a683afb4089f82beaf7312a20ee873e.bindTooltip(
+                `<div>
+                     Tonga <br> 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
